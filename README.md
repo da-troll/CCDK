@@ -16,7 +16,7 @@
 
 ## What is CCDK?
 
-CCDK (Code Dashboard Kit) is a lightweight telemetry server and frontend starter for building dashboards that visualize AI agent sessions. Track tokens, costs, tool usage, and performance metrics across multiple concurrent sessions.
+CCDK is a lightweight telemetry server and frontend starter for building dashboards that visualize AI agent sessions. Track tokens, costs, tool usage, and performance metrics across multiple concurrent sessions.
 
 ```
 ┌─────────────────┐      OTLP       ┌─────────────────┐      REST API      ┌─────────────────┐
