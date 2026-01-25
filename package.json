@@ -1,0 +1,24 @@
+{
+  "name": "ccdk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Claude Code Dashboard Kit — OTLP server + hooks + specs for telemetry dashboards",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently -n server,frontend -c blue,green \"npm run dev:server\" \"npm run dev:frontend\"",
+    "dev:server": "node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "node server.js",
+    "install:all": "npm install && cd frontend && npm install",
+    "test": "bash test-server.sh"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
